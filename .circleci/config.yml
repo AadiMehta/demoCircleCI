@@ -51,7 +51,7 @@ jobs:
             . venv/bin/activate
             python manage.py test
 #            pip install '.[test]' --user
-            echo $HOME
+#            echo $HOME
       - run:
           name: Run coverage
           command: |
