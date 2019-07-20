@@ -33,7 +33,7 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
-            pip install coverage --user
+            pip install coverage
 
       - save_cache:
           paths:
@@ -55,6 +55,7 @@ jobs:
       - run:
           name: Run coverage
           command: |
+            . venv/bin/activate
             $HOME/.local/bin/coverage manage.py test
             $HOME/.local/bin/coverage report
             $HOME/.local/bin/coverage html
