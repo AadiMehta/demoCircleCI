@@ -1,8 +1,4 @@
+mandrill==1.0.57
 mock==3.0.5
 Django==2.2.1
-mandrill==1.0.57
-zeep==3.4.0
-requests==2.22.0
-nps==0.1.0
 djangorestframework==3.10.1
-utils==0.9.0
