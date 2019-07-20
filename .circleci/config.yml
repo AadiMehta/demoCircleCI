@@ -53,9 +53,9 @@ jobs:
       - run:
           name: Run coverage
           command: |
-            - coverage run manage.py test
-            - coverage report
-            - coverage html
+            coverage run manage.py test
+            coverage report
+            coverage html
       - store_artifacts:
           path: test-reports
           destination: test-reports
