@@ -40,4 +40,4 @@ show_missing = True
 
 
 [html]
-directory = coverage_html_report
+directory = htmlcov
