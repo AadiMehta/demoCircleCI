@@ -56,9 +56,9 @@ jobs:
           name: Run coverage
           command: |
             . venv/bin/activate
-            $HOME/.local/bin/coverage manage.py test
-            $HOME/.local/bin/coverage report
-            $HOME/.local/bin/coverage html
+            coverage manage.py test
+            coverage report
+            coverage html
       - store_artifacts:
           path: test-reports
           destination: test-reports
