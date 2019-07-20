@@ -64,6 +64,7 @@ jobs:
       - run:
           name: Codecov run
           command: |
+            . venv/bin/activate
             codecov
 
       - store_artifacts:
