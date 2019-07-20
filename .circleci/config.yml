@@ -34,6 +34,7 @@ jobs:
             . venv/bin/activate
             pip install -r requirements.txt
             pip install coverage
+            pip install codecov
 
       - save_cache:
           paths:
@@ -59,6 +60,12 @@ jobs:
             coverage run manage.py test
             coverage report
             coverage html
+
+      - run:
+          name: Codecov run
+          command: |
+            codecov
+
       - store_artifacts:
           path: test-reports
           destination: test-reports
