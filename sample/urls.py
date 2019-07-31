@@ -16,9 +16,11 @@ Including another URLconf
 from django.urls import path
 from .views import Sample, temp_endpoint, temp_template
 
+
 app_name = "Sample"
 
 urlpatterns = [
     path('sample', Sample.as_view(), name="Sample"),
     path('v1', temp_template, name="temp"),
+    # path('home', direct_to_template, {"template": "some_app/home.html"}),
 ]
