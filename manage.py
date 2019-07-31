@@ -16,6 +16,6 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
-
+# starting point of the script
 if __name__ == '__main__':
     main()
